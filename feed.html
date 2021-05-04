@@ -6,6 +6,32 @@
             <link href="background.css" rel="stylesheet" type="text/css">
             <link href="feed.css" rel="stylesheet" type="text/css">
             <link rel="icon" href="../img/icon.png">
+            <style>
+                .main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+                .cardViewSection {
+                   
+                }
+                .infoLeft {
+                    display: inline-block;
+                    width: 500px;
+                }
+                .infoRight {
+                    float: right;
+
+                  }
+                .cardInfo{
+                    display: flex;
+                    flex-direction: column;
+            
+                }
+              
+
+            </style>
         </head>
         <body>
             <div class="main">
@@ -15,19 +41,17 @@
                             <div class="userNickName">LikeLionSSU</div>
                         </header>
                         <div class="cardImage">
-                            <img src="../img/ssu_likelion_logo.png" alt="sample">
+                            <img src="../img/ssu_likelion_logo.png" alt="sample" width="500" height="500">
                         </div>
                     </div>
 
                     <div class="cardInfo">
                         <div class="infoLeft">
-                            <img class="feedImg" src="../img/liked.png" alt="좋아요">
-                            <img class="feedImg" src="../img/comment.png" alt="코멘트">
-                            <img class="feedImg" src="../img/upload.png" alt="업로드">
-                        </div>
-                        <div class="infoRight">
-                            <img class="feedImg" src="../img/edit.png" alt="수정">
-                            <img class="feedImg" src="../img/delete.png" alt="삭제">
+                            <img class="feedImg" src="../img/liked.png" alt="좋아요" width="30" height="30">
+                            <img class="feedImg" src="../img/comment.png" alt="코멘트" width="30" height="30">
+                            <img class="feedImg" src="../img/upload.png" alt="업로드" width="30" height="30">
+                            <img class="infoRight" src="../img/edit.png" alt="수정" width="30" height="30">
+                            <img class="infoRight" src="../img/delete.png" alt="삭제" width="30" height="30">
                             
                         </div>
                         <div class="comment">
@@ -36,7 +60,7 @@
                         </div>
                         <div class="comment_form">
                             <form action="">
-                                <input type="text" placeholder="댓글 입력..">
+                                <input type="text" placeholder="댓글 입력.." style="width:490px">
                             </form>
                         </div>
                     </div>

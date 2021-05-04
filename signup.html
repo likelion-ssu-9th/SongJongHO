@@ -6,19 +6,107 @@
         <link href="signUp.css" rel="stylesheet" type="text/css">
         <link href="background.css" rel="stylesheet" type="text/css">
         <link rel="lion" href="../img/icon.png">
+        <style>
+              body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                top: 100px;
+
+            }
+            .signUp_container {
+                border-style: groove;
+                padding: 10px;
+                width: 300px;  
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                height: 400px;
+                text-align: center;
+
+                
+  
+
+            }
+            .except_img{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .joinLetter {
+                text-align: center;
+                color : gray;
+                font-size:16px;
+
+            }
+            .line {
+            
+
+            }
+            .userSignUp {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                padding:10px;
+                position: relative;
+                top:10px;
+                
+                justify-content: space-around;
+                margin-top: 4px;
+                
+                border-radius: 3px;
+                border-style: groove;
+                
+                
+
+            }
+            #signUpButton {
+                color:white;
+                font-weight: bold;
+                background-color: skyblue;
+                position: relative;
+                top : 35px;
+                padding: 5px;
+                
+                border-radius: 3px;
+
+            }
+               
+            .join {
+                border-style: groove;
+              
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 200px;
+            }
+            .joinBtn {
+                color:skyblue;
+                font-weight: bold;
+                background-color: white;
+                border-style: none;
+            
+            }
+        </style>
     
     </head>
 
     <body>
         <div class="signUp_container">
             <img class="instargramText" src="../img/logo_text.png" alt="instargramText">
-            <h2 class="joinLetter">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
-            <hr class="line">
-            <input type="text" class="userSignUp" placeholder="휴대폰 번호 또는 이메일 주소">
-            <input type="text" class="userSignUp" placeholder="성명">
-            <input type="text" class="userSignUp" placeholder="사용자 이름">
-            <input type="password" class="userSignUp" placeholder="비밀번호">
-            <button id="signUpButton" disabled>가입</button>
+            <div class="except_img">
+                <h2 class="joinLetter">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
+                <hr class="line">
+                <input type="text" class="userSignUp" placeholder="휴대폰 번호 또는 이메일 주소">
+                <input type="text" class="userSignUp" placeholder="성명">
+                <input type="text" class="userSignUp" placeholder="사용자 이름">
+                <input type="password" class="userSignUp" placeholder="비밀번호">
+                <button id="signUpButton" disabled>가입</button>
+            </div>
         </div>
         <div>
             <footer class="joinInsta">
