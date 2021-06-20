@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Instargram</title>
-      <link rel="icon" href="../img/icon.png">
+      <link rel="icon" href="{% static 'img/icon.png' %}">
       <style>
           header {
               display: flex;
@@ -77,7 +78,7 @@
         <header>
          
             <div class=IMG>   
-                <button type="button"> <img src="../img/ssu_likelion_logo_150x150.png" alt="ssu_likelion"></button>
+                <button type="button"> <img src="{% static 'img/ssu_likelion_logo_150x150.png' %}" alt="ssu_likelion"></button>
             </div>
             
             <div class=name>
@@ -99,7 +100,7 @@
         </header>
        <main>
         <div class = img1>   
-        <img src="../img/lionface.png">
+        <img src="{% static 'img/lionface.png' %}">
           <ul aria-hidden="true">
             <li>Like : 0</li> 
             <li>Comments : 0</li>
@@ -109,7 +110,7 @@
    
            <div class = img2>   
          
-           <img src="../img/lionface.png">
+           <img src="{% static 'img/lionface.png' %}">
         <ul aria-hidden="true">
          <li>Like : 0</li> 
          <li>Comments : 0</li>
@@ -118,7 +119,7 @@
 
            <div class = img3>   
         
-        <img src="../img/lionface.png">
+        <img src="{% static 'img/lionface.png' %}">
         <ul aria-hidden="true">
          <li>Like : 0</li> 
          <li>Comments : 0</li>

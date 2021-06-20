@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +6,7 @@
         <title>회원가입 - Instargram</title>
         <link href="signUp.css" rel="stylesheet" type="text/css">
         <link href="background.css" rel="stylesheet" type="text/css">
-        <link rel="lion" href="../img/icon.png">
+        <link rel="lion" href="{% static 'img/icon.png' %}">
         <style>
               body {
                 display: flex;
@@ -97,7 +98,7 @@
 
     <body>
         <div class="signUp_container">
-            <img class="instargramText" src="../img/logo_text.png" alt="instargramText">
+            <img class="instargramText" src="{% static 'img/logo_text.png' %}" alt="instargramText">
             <div class="except_img">
                 <h2 class="joinLetter">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
                 <hr class="line">

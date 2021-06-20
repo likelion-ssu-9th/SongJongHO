@@ -1,35 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="kr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Instargram</title>
-        <link href="base.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../img/icon.png">
-    </head>
-    <body>
-        <header>
-            <div class="leftbox">
-
-                <div class="favicon frame">
-                    <img class="faviconFrame" src="../img/line_favicon.png" alt="인스타 로고" />                    
-                </div>
-
-                <div class="line">
-                    <img class="logo" src="../img/logo_text.png" alt="인스타 글씨" />                    
-                </div>
-                
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="{% static 'img/icon.png' %}">
+</head>
+<body>
+    <header>
+        <div class="left_box">
+            <div class="favicon_frame">
+               
+                <button type="button" class="heart"><img src="{% static 'img/line_favicon.png' %}"><a href="{% url 'feed' %}"></a></button>
             </div>
-            <div class="right box">
-
-                <div class="heart_box">
-                    <img class="heart" src="../img/new.png" alt="글 작성" />
-                </div>
-
-                <div class="myInfo_box">
-                    <img class="myInfo" src="../img/myinfo.png" alt="내 프로필"/>
-                </div>
-
+            <div class="line">
+            
+                <button type="button" class="heart"><img src="{% static 'img/logo_text.png' %}"><a href="{% url 'feed' %}"></a></button>
             </div>
-        </header>
-    </body>
+        </div>
+        <div class="right_box">
+            <div class="heart_box">
+         
+                <button type="button" class="heart"><img src="{% static 'img/new.png' %}"><a href="{% url 'new' %}"></a></button>
+            </div>
+            <div class="myInfo_box">
+            
+                <button type="button" class="heart"><img src="{% static 'img/myinfo.png' %}"><a href="{% url 'profile' %}"></a></button>
+            </div>
+        </div>
+    </header>
+</body>
 </html>

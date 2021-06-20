@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Instargram</title>
         <link href="login.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../img/icon.png">
+        <link rel="icon" href="{% static 'img/icon.png' %}">
         <style>
             body {
                 display: flex;
@@ -68,7 +69,7 @@
 
     <body>
         <div class="login_container">
-            <img class="instargramText" src="../img/logo_text.png" alt="instargramText">
+            <img class="instargramText" src="{% static 'img/logo_text.png' %}" alt="instargramText">
             <input type="text" class="userLogin" placeholder="전화번호, 사용자 이름 또는 이메일">
             <input type="password" class="userLogin" placeholder="비밀번호">
             <button id="LoginButton" disabled>로그인</button>
