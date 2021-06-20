@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Instargram</title>
+      <link rel="icon" href="../img/icon.png">
+      <style>
+          header {
+              display: flex;
+              justify-content: center;
+          }
+          .IMG {
+              
+              display: inline-block;
+              width: 150px;
+              height: 150px;
+              border-radius: 70%;
+              overflow: hidden;
+              float: left;
+          }
+          .name {
+              position: relative;
+              left: 100px;
+            
+          }
+          .name button {
+              position: relative;
+              top:-40px;
+              left: 250px;
+              font-weight: bold;
+              width: 100px;
+          }
+          .unlist {
+            position: relative;
+              top: 90px;
+              right: 150px;
+              font-weight: bold;
+
+          }
+          .unlist ul {
+              
+              list-style: none;
+          }
+          .unlist li {
+              float: left;
+              padding: 20px;
+
+        }
+        .unlist p {
+              position: relative;
+              left: 30px;
+        }
+        main {
+            display: flex;
+            position: relative;
+            top:100px;
+            
+        }
+        .img1:hover {
+            background-color: lightgray;
+
+        }
+        .img2:hover {
+            background-color: lightgray;
+
+        }.img3:hover {
+            background-color: lightgray;
+
+        }
+        main img {
+            flex-grow: 1;
+
+        }
+      </style>
+    </head>
+    <body>
+        <header>
+         
+            <div class=IMG>   
+                <button type="button"> <img src="../img/ssu_likelion_logo_150x150.png" alt="ssu_likelion"></button>
+            </div>
+            
+            <div class=name>
+                <h1>Jong ho-Song</h1>
+                <button type="button">프로필 편집</button>    
+            </div>
+          
+            <div class=unlist>
+                <ul>
+                    <li>000 게시물</li>
+                    <li>000 팔로워</li>
+                    <li>000 팔로잉</li>
+                    
+                </ul>
+                <p>hello world</p>    
+            </div>
+            
+            
+        </header>
+       <main>
+        <div class = img1>   
+        <img src="../img/lionface.png">
+          <ul aria-hidden="true">
+            <li>Like : 0</li> 
+            <li>Comments : 0</li>
+           </ul>
+           </div>
+      
+   
+           <div class = img2>   
+         
+           <img src="../img/lionface.png">
+        <ul aria-hidden="true">
+         <li>Like : 0</li> 
+         <li>Comments : 0</li>
+        </ul>
+           </div>
+
+           <div class = img3>   
+        
+        <img src="../img/lionface.png">
+        <ul aria-hidden="true">
+         <li>Like : 0</li> 
+         <li>Comments : 0</li>
+        </ul>
+        </div>
+
+    </main>
+
+
+    </body>
+</html>
